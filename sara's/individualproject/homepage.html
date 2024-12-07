@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <style>
+        body {
+            background-image: url(images/wallpeper\ -\ Copy.jpg);
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #F8D7DA; /* Soft pink background for the top navigation */
+        }
+
+        .topnav a {
+            float: left;
+            color: #333; /* Dark color for text */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #D2B49D; /* Light brown color on hover */
+            color: black; /* Change text color to black on hover */
+        }
+
+        .topnav a.active {
+            background-color: #D2B49D; /* Light brown background for active button */
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #fff;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            height: 200px;
+            width: auto;
+            border-radius: 15px;
+            border: 5px solid #D2B49D; /* Light brown border */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-container a {
+            display: inline-block;
+        }
+
+        .image-container img:active {
+            transform: scale(1.1);
+        }
+
+        hr {
+            border: 0;
+            height: 5px;
+            background-color: #17202a;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .footer {
+            text-align: center;
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .footer p {
+            font-size: 1.2em;
+        }
+
+        /* Align logos */
+        .footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .footer .social-icons img {
+            width: 50px; /* Set all logos to same size */
+            height: 50px;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .footer .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Darker pink color for the name */
+        .footer .name {
+            color: #D18F92; /* Darker pink color */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="home_site.html">Home</a>
+        <a href="biodata.html" target="_blank">My Life</a>
+        <a href="my_cats.html" target="_blank">My Cutie Pie</a>
+        <a href="outfit_check.html" target="_blank">My Outfit</a>
+        <a href="my_friend.html" target="_blank">My Best Mate</a>
+        <a href="fav_thing&person.html" target="_blank">Top Pick & Love</a>
+    </div>
+
+    <h1><strong>Welcome to my website!</strong></h1>
+
+    <div class="image-container">
+        <a href="images/photo_2024-11-13_10-34-10.jpg" target="_blank">
+            <img src="images/photo_2024-11-12_16-24-10.jpg" alt="Image 1">
+        </a>
+        <a href="images/photo_2024-04-01_12-58-53.jpg" target="_blank">
+            <img src="images/photo_2024-04-01_12-58-53.jpg" alt="Image 2">
+        </a>
+        <a href="images/photo_2024-05-30_16-12-17.jpg" target="_blank">
+            <img src="images/photo_2024-05-30_16-12-17.jpg" alt="Image 3">
+        </a>
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        <p class="name"><strong>────୨ SARA DEANNA NATASHA BINTI SOPHIAN ৎ────</strong></p>
+
+        <p>
+            <!--using image as hyperlink, local link-->
+            <a href="biodata.html"><img src="images/button.png" alt="Biodata Button"></a>
+            <a href="my_cats.html"><img src="images/buttonN.png" alt="cats Button"></a>
+            <a href="outfit_check.html"><img src="images/button (1).png" alt="outfit Button"></a>
+            <a href="my_friend.html"><img src="images/button (2).png" alt="friend Button"></a>
+            <a href="fav_thing&person.html"><img src="images/button (3).png" alt="fav Button"></a>
+        </p>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/saradeannaa/"><img src="images/Instagram-Logo.png" alt="Instagram"></a>
+            <a href="https://x.com/saradnnaa"><img src="images/OIP (5).jpg" alt="X.com"></a>
+            <a href="mailto:saradeannaa@gmail.com"><img src="images/OIP (6).jpg" alt="Email"></a>
+        </div>
+    </div>
+
+</body>
+</html>
