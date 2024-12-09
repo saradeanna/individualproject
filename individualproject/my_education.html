@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <style>
+        body {
+            background-image: url(images/pink-wallpaper-with-swirls-it-style-dynamic-linear-compositions-repetitive-dotwork-earthy-organic-shapes-spiral-vortex-patterns-soft-crosshatchings-generate-ai_865659-3497.jpg);
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #3a3a3a;
+            line-height: 1.8;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #F8D7DA;
+        }
+
+        .topnav a {
+            float: left;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #D2B49D;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #D2B49D;
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            color: #632660;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #6a4e5e;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #632660;
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .timeline-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #D18F92;
+        }
+
+        .timeline-item div {
+            max-width: 700px;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.5em;
+            color: #632660;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item p {
+            font-size: 1em;
+            color: #3a3a3a;
+        }
+
+        .timeline-item img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.3em;
+            color: #632660;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f7f1f1;
+            border-left: 4px solid #D18F92;
+            border-radius: 5px;
+        }
+
+        .achievements {
+            margin-top: 30px;
+        }
+
+        .achievements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .achievements ul li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .achievements ul li::before {
+            content: "✔";
+            color: #632660;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2em;
+        }
+
+        .extra-images {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .extra-images img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #D18F92;
+            transition: transform 0.3s ease;
+        }
+
+        .extra-images img:hover {
+            transform: scale(1.05);
+        }
+
+        .map-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .map-container img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .map-container h2 {
+            margin-bottom: 10px;
+            color: #632660;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #F8D7DA;
+        }
+
+        .footer p {
+            font-size: 1.2em;
+            color: #3a3a3a;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="homepage.html">Home</a>
+        <a href="biodata.html" target="_self">About Me</a>
+        <a href="my_cats.html" target="_self">My Cutie Pie</a>
+        <a href="outfit_check.html" target="_self">My Outfit</a>
+        <a href="my_friend.html" target="_self">My Best Mate</a>
+        <a href="my_family.html" target="_self">My Family</a>
+        <a href="my_experience.html" target="_self">My Experience</a>
+        <a href="my_education.html" target="_self">Academic Journey</a>
+        <a href="my_gallery.html" target="_self">Photo Dump</a>
+    </div>
+
+    <div class="header">
+        <h1>My Academic Journey</h1>
+        <p>A story of perseverance and growth through the years.</p>
+    </div>
+
+    <div class="content">
+        <h2>Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <a href="images/photo_2024-12-08_12-31-19.jpg" data-lightbox="timeline" data-title="Kindergarten (Q-Dees)">
+                    <img src="images/photo_2024-12-08_12-31-19.jpg" alt="Kindergarten">
+                </a>
+                <div>
+                    <h3>Kindergarten (Q-Dees)</h3>
+                    <p>Started learning at the age of 3, building the foundation for education.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <a href="images/photo_2024-12-08_12-31-37.jpg" data-lightbox="timeline" data-title="Primary School (SK Jalan 3 & SK Bandar Seri Putra)">
+                    <img src="images/photo_2024-12-08_12-31-37.jpg" alt="Primary School">
+                </a>
+                <div>
+                    <h3>Primary School (SK Jalan 3)</h3>
+                    <p>Studied at SK Jalan 3 and SK Bandar Seri Putra, adapting to new environments and overcoming challenges.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <a href="images/photo_2024-12-08_12-31-13.jpg" data-lightbox="timeline" data-title="High School (SMK Bandar Seri Putra)">
+                    <img src="images/photo_2024-12-08_12-31-13.jpg" alt="High School">
+                </a>
+                <div>
+                    <h3>Secondary School (SMK Bandar Seri Putra)</h3>
+                    <p>Focused on Additional Mathematics, Accounting, and Business, excelling in subjects that shaped future aspirations.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <a href="images/photo_2024-12-08_12-38-56.jpg" data-lightbox="timeline" data-title="Diploma in Information Management (UiTM Rembau)">
+                    <img src="images/photo_2024-12-08_12-38-56.jpg" alt="Diploma">
+                </a>
+                <div>
+                    <h3>Diploma in Information Management (UiTM Rembau)</h3>
+                    <p>Gained knowledge in managing information systems and participated actively in campus life.</p>
+                </div>
+            </div>
+        </div>
+
+        <blockquote>
+            "Education is the most powerful weapon which you can use to change the world." – Nelson Mandela
+        </blockquote>
+
+        <h2>Summary of Education</h2>
+        <p>The early years in kindergarten were all about learning through play and curiosity, but they weren’t without their challenges. I remember feeling a bit scared at first because I was the youngest in my class. Before joining Q-Dees when I was 5, I had attended a Chinese kindergarten, so the transition wasn’t entirely new, but it was different. Q-Dees provided a solid foundation for developing a love for learning and building social skills.</p>
+        <p>Moving on to primary school, I started at SK Jalan 3 and was there until Year 4. It was an important period where I learned to adapt to new situations and made lifelong friends. At the end of Year 4, life took an unexpected turn when I transferred to SK Pakatan Jaya in Ipoh, Perak, to live with my grandmother. My mom was unwell, and my dad needed to be there for her, so I stayed with my grandmother during that time. Despite the challenges, I thrived academically, always striving to do my best. I was proud to maintain the top spot in my class right up until graduation. That period taught me resilience and the importance of family support.</p>
+        <p>High school was a significant chapter that pushed me further and opened my mind to new interests. From Form 1 to Form 5, I attended SMK Bandar Seri Putra (BSP), a school known for its friendly atmosphere and strong sense of community. During Form 1 to Form 3, I was part of the KAA class, where we focused on Arabic, which gave me a unique and enriching experience. It was like being in a special school within a school because we were the only KAA class. In Form 4, I took on the challenges of Additional Mathematics, Accounting, and Business, which sparked a deep interest in analytical thinking and problem-solving. It was during this time that I discovered my passion for subjects that require logical reasoning and critical thought.</p>
+        <p>My time in high school was not just about academics. I was a library prefect, and that role taught me responsibility and how to work as part of a team. Our uniforms were green, and I wore them with pride. I joined a range of extracurricular activities to broaden my horizons and pick up new skills. I started playing hockey back in primary school at SK Jalan 3 and continued in high school. Netball was another sport I loved; I joined in Form 1 and represented my school, even going on to compete at the district level. I was also active in the KAFA class, representing my school in competitions up to the Hulu Langat district, where I won first place in the syarahan contest. It was an experience that not only improved my public speaking but also boosted my confidence.</p>
+        <p>These early experiences, from kindergarten to high school, were more than just a path of academic achievement; they were about growing as a person, developing resilience, and learning to balance work and play. Each stage of my education laid the groundwork for what came next and prepared me for the challenges of higher education.</p>
+        
+
+        <h2>Achievements</h2>
+        <div class="achievements">
+            <ul>
+                <li>Graduated with top honors in high school.</li>
+                <li>Completed projects and case studies during the diploma program.</li>
+                <li>Received recognition in extracurricular activities for leadership and teamwork.</li>
+            </ul>
+        </div>
+
+        <h2>Gallery</h2>
+        <div class="extra-images">
+            <a href="images/photo_2024-12-08_13-26-10.jpg" data-lightbox="gallery"><img src="images/photo_2024-12-08_13-26-10.jpg" alt="Education Event 1"></a>
+            <a href="images/photo_2024-12-08_13-26-13.jpg" data-lightbox="gallery"><img src="images/photo_2024-12-08_13-26-13.jpg" alt="Education Event 2"></a>
+            <a href="images/photo_2024-12-08_13-26-15.jpg" data-lightbox="gallery"><img src="images/photo_2024-12-08_13-26-15.jpg" alt="Education Event 3"></a>
+            <!-- Add more image links as needed -->
+        </div>
+
+        <div class="map-container">
+            <h2>MAPS OF UiTM REMBAU</h2>
+            <img src="images/Screenshot (384).png" alt="UiTM Rembau Map" height="300" style="border: 5px solid #D18F92;" usemap="#uitm-map"> <!-- Added border -->
+            <map name="uitm-map">
+                <area target="_blank" alt="UiTM Negeri Sembilan Kampus Rembau" title="UiTM Negeri Sembilan Kampus Rembau" href="https://nsembilan.uitm.edu.my/rembau/" coords="0,395,0,3,722,1,722,391" shape="poly">
+            </map>
+        </div>
+
+    <div class="footer">
+        <p>&copy; 2024 My Academic Journey.</p>
+    </div>
+</body>
+</html>

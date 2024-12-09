@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Add a cute font -->
+    <style>
+        body {
+            background-image: url(images/wallpeper\ -\ Copy.jpg);
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #b6886b; /* Soft pink background for the top navigation */
+        }
+
+        .topnav a {
+            float: left;
+            color: #333; /* Dark color for text */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #D2B49D; /* Light brown color on hover */
+            color: black; /* Change text color to black on hover */
+        }
+
+        .topnav a.active {
+            background-color: #D2B49D; /* Light brown background for active button */
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Pacifico', cursive; /* Use a cute, playful font */
+            font-size: 4em; /* Make it bigger */
+            color: #b6886b; /* Maintain contrast for readability */
+            margin-top: 20px; /* Add some spacing */
+        }
+
+        .date-time {
+            text-align: center;
+            font-size: 1.5em;
+            color: #b6886b;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            height: 200px;
+            width: auto;
+            border-radius: 15px;
+            border: 5px solid #D2B49D; /* Light brown border */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        hr {
+            border: 0;
+            height: 5px;
+            background-color: #17202a;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .footer {
+            text-align: center;
+            color: #b6886b;
+            font-size: 1.5em;
+        }
+
+        .footer p {
+            font-size: 1.2em;
+        }
+
+        .footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .footer .social-icons img {
+            width: 50px; /* Set all logos to same size */
+            height: 50px;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .footer .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer .name {
+            color: #b6886b; /* Darker pink color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="homepage.html">Home</a>
+        <a href="biodata.html" target="_self">About Me</a>
+        <a href="my_cats.html" target="_self">My Cutie Pie</a>
+        <a href="outfit_check.html" target="_self">My Outfit</a>
+        <a href="my_friend.html" target="_self">My Best Mate</a>
+        <a href="my_family.html" target="_self">My Family</a>
+        <a href="my_experience.html" target="_self">My Experience</a>
+        <a href="my_education.html" target="_self">Academic Journey</a>
+        <a href="my_gallery.html" target="_self">Photo Dump</a>
+    </div>
+
+    <h1><strong>Welcome to My Website!</strong></h1>
+
+    <div class="date-time" id="dateTime"></div>
+
+    <div class="image-container">
+        <a href="images/photo_2024-11-13_10-34-10.jpg" target="_blank">
+            <img src="images/photo_2024-11-12_16-24-10.jpg" alt="Image 1">
+        </a>
+        <a href="images/photo_2024-04-01_12-58-53.jpg" target="_blank">
+            <img src="images/photo_2024-04-01_12-58-53.jpg" alt="Image 2">
+        </a>
+        <a href="images/photo_2024-05-30_16-12-17.jpg" target="_blank">
+            <img src="images/photo_2024-05-30_16-12-17.jpg" alt="Image 3">
+        </a>
+    </div>
+
+    <div class="date-time" id="dateTime"></div>
+
+    <hr>
+
+    <div class="footer">
+        <p class="name"><strong>────୨ SARA DEANNA NATASHA BINTI SOPHIAN ৎ────</strong></p>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/saradeannaa/"><img src="images/photo_2024-12-08_11-37-41-removebg-preview.png" width="60px"></a>
+            <a href="https://x.com/saradnnaa"><img src="images/photo_2024-12-08_11-37-44-removebg-preview.png" width="90px"></a>
+            <a href="mailto:saradeannaa@gmail.com"><img src="images/photo_2024-12-08_11-37-39-removebg-preview.png" width="60px"></a>
+        </div>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const dateTimeElement = document.getElementById('dateTime');
+            dateTimeElement.innerText = now.toLocaleString(); // Display date and time in locale format
+        }
+        setInterval(updateDateTime, 1000); // Update every second
+        updateDateTime(); // Initial call to set the time immediately
+    </script>
+
+</body>
+</html>
